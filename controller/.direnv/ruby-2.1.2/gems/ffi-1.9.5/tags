@@ -1,0 +1,206 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+<<	lib/ffi/enum.rb	/^    def <<(enum)$/;"	f	class:FFI.Enums
+AutoPointer	lib/ffi/autopointer.rb	/^  class AutoPointer < Pointer$/;"	c	class:FFI
+CallableReleaser	lib/ffi/autopointer.rb	/^    class CallableReleaser < Releaser$/;"	c	class:FFI
+ConstGenerator	lib/ffi/tools/const_generator.rb	/^  class ConstGenerator$/;"	c	class:FFI
+ConstGenerator	lib/ffi/tools/const_generator.rb	/^  class ConstGenerator::Constant$/;"	c	class:FFI.ConstGenerator
+DefaultReleaser	lib/ffi/autopointer.rb	/^    class DefaultReleaser < Releaser$/;"	c	class:FFI
+Enum	lib/ffi/enum.rb	/^  class Enum$/;"	c	class:FFI
+Enum	lib/ffi/struct.rb	/^    class Enum < Field$/;"	c	class:FFI.StructLayout
+Enums	lib/ffi/enum.rb	/^  class Enums$/;"	c	class:FFI
+FFI	lib/ffi/autopointer.rb	/^module FFI$/;"	m
+FFI	lib/ffi/enum.rb	/^module FFI$/;"	m
+FFI	lib/ffi/errno.rb	/^module FFI$/;"	m
+FFI	lib/ffi/io.rb	/^module FFI$/;"	m
+FFI	lib/ffi/library.rb	/^module FFI$/;"	m
+FFI	lib/ffi/managedstruct.rb	/^module FFI$/;"	m
+FFI	lib/ffi/platform.rb	/^module FFI$/;"	m
+FFI	lib/ffi/pointer.rb	/^module FFI$/;"	m
+FFI	lib/ffi/struct.rb	/^module FFI$/;"	m
+FFI	lib/ffi/struct_layout_builder.rb	/^module FFI$/;"	m
+FFI	lib/ffi/tools/const_generator.rb	/^module FFI$/;"	m
+FFI	lib/ffi/tools/generator.rb	/^module FFI$/;"	m
+FFI	lib/ffi/tools/generator_task.rb	/^class FFI::Generator::Task < Rake::TaskLib$/;"	c
+FFI	lib/ffi/tools/struct_generator.rb	/^module FFI$/;"	m
+FFI	lib/ffi/tools/types_generator.rb	/^module FFI$/;"	m
+FFI	lib/ffi/types.rb	/^module FFI$/;"	m
+FFI	lib/ffi/union.rb	/^module FFI$/;"	m
+FFI	lib/ffi/variadic.rb	/^module FFI$/;"	m
+FFI	lib/ffi/version.rb	/^module FFI$/;"	m
+Generator	lib/ffi/tools/generator.rb	/^  class Generator$/;"	c	class:FFI
+IO	lib/ffi/io.rb	/^  module IO$/;"	m	class:FFI
+InnerStruct	lib/ffi/struct.rb	/^    class InnerStruct < Field$/;"	c	class:FFI.StructLayout
+Library	lib/ffi/library.rb	/^  module Library$/;"	m	class:FFI
+ManagedStruct	lib/ffi/managedstruct.rb	/^  class ManagedStruct < FFI::Struct$/;"	c	class:FFI
+ManagedStructConverter	lib/ffi/struct.rb	/^    class ManagedStructConverter < StructByReference$/;"	c	class:FFI.Struct
+Mapped	lib/ffi/struct.rb	/^    class Mapped < Field$/;"	c	class:FFI.StructLayout
+NotFoundError	lib/ffi/library.rb	/^  class NotFoundError < LoadError$/;"	c	class:FFI
+Platform	lib/ffi/platform.rb	/^  module Platform$/;"	m	class:FFI
+PlatformError	lib/ffi/platform.rb	/^  class PlatformError < LoadError; end$/;"	c	class:FFI
+Pointer	lib/ffi/pointer.rb	/^  class Pointer$/;"	c	class:FFI
+Releaser	lib/ffi/autopointer.rb	/^    class Releaser$/;"	c	class:FFI
+StrPtrConverter	lib/ffi/types.rb	/^  class StrPtrConverter$/;"	c	class:FFI
+Struct	lib/ffi/struct.rb	/^  class Struct$/;"	c	class:FFI
+StructGenerator	lib/ffi/tools/struct_generator.rb	/^  class StructGenerator$/;"	c	class:FFI
+StructGenerator	lib/ffi/tools/struct_generator.rb	/^  class StructGenerator::Field$/;"	c
+StructLayout	lib/ffi/struct.rb	/^  class StructLayout$/;"	c	class:FFI
+StructLayoutBuilder	lib/ffi/struct_layout_builder.rb	/^  class StructLayoutBuilder$/;"	c	class:FFI
+TypesGenerator	lib/ffi/tools/types_generator.rb	/^  class TypesGenerator$/;"	c	class:FFI
+Union	lib/ffi/union.rb	/^  class Union < FFI::Struct$/;"	c	class:FFI
+VariadicInvoker	lib/ffi/variadic.rb	/^  class VariadicInvoker    $/;"	c	class:FFI
+[]	lib/ffi/enum.rb	/^    def [](query)$/;"	f	class:FFI.Enum
+[]	lib/ffi/tools/const_generator.rb	/^    def [](name)$/;"	f	class:FFI.ConstGenerator
+__map_symbol	lib/ffi/enum.rb	/^    def __map_symbol(symbol)$/;"	f	class:FFI.Enums
+add	lib/ffi/struct_layout_builder.rb	/^    def add(name, type, offset = nil)$/;"	f	class:FFI.StructLayoutBuilder
+add_array	lib/ffi/struct_layout_builder.rb	/^    def add_array(name, type, count, offset = nil)$/;"	f	class:FFI.StructLayoutBuilder
+add_field	lib/ffi/struct_layout_builder.rb	/^    def add_field(name, type, offset = nil)$/;"	f	class:FFI.StructLayoutBuilder
+add_struct	lib/ffi/struct_layout_builder.rb	/^    def add_struct(name, type, offset = nil)$/;"	f	class:FFI.StructLayoutBuilder
+add_typedef	lib/ffi/types.rb	/^  def self.add_typedef(old, add)$/;"	F	class:FFI
+align	lib/ffi/struct_layout_builder.rb	/^    def align(offset, align)$/;"	f	class:FFI.StructLayoutBuilder
+aligned	lib/ffi/struct.rb	/^      def aligned(alignment = 1)$/;"	f	class:FFI.Struct
+alignment	lib/ffi/struct.rb	/^    def alignment$/;"	f	class:FFI.Struct
+alignment	lib/ffi/struct.rb	/^    def self.alignment$/;"	F	class:FFI.Struct
+alignment=	lib/ffi/struct_layout_builder.rb	/^    def alignment=(align)$/;"	f	class:FFI.StructLayoutBuilder
+array_layout	lib/ffi/struct.rb	/^      def array_layout(builder, spec)$/;"	f	class:FFI.Struct
+attach	lib/ffi/variadic.rb	/^    def attach(mod, mname)$/;"	f	class:FFI.VariadicInvoker
+attach_function	lib/ffi/library.rb	/^    def attach_function(name, func, args, returns = nil, options = nil)$/;"	f	class:FFI.Library
+attach_variable	lib/ffi/library.rb	/^    def attach_variable(mname, a1, a2 = nil)$/;"	f	class:FFI
+auto_ptr	lib/ffi/struct.rb	/^    def self.auto_ptr$/;"	F	class:FFI.Struct
+autorelease=	lib/ffi/autopointer.rb	/^    def autorelease=(autorelease)$/;"	f	class:FFI
+autorelease?	lib/ffi/autopointer.rb	/^    def autorelease?$/;"	f	class:FFI
+bsd	lib/ffi/platform.rb	/^    def self.bsd?$/;"	F
+build	lib/ffi/struct_layout_builder.rb	/^    def build$/;"	f	class:FFI.StructLayoutBuilder
+builder	lib/ffi/union.rb	/^    def self.builder$/;"	F	class:FFI.Union
+by_ref	lib/ffi/struct.rb	/^    def self.by_ref(flags = :inout)$/;"	F	class:FFI.Struct
+by_value	lib/ffi/struct.rb	/^    def self.by_value$/;"	F	class:FFI.Struct
+calculate	lib/ffi/tools/const_generator.rb	/^    def calculate(options = {})$/;"	f	class:FFI.ConstGenerator
+calculate	lib/ffi/tools/struct_generator.rb	/^    def calculate(options = {})$/;"	f	class:FFI.StructGenerator
+call	lib/ffi/autopointer.rb	/^      def call(*args)$/;"	f	class:FFI.Releaser
+call	lib/ffi/variadic.rb	/^    def call(*args, &block)$/;"	f	class:FFI.VariadicInvoker
+callback	lib/ffi/library.rb	/^    def callback(*args)$/;"	f
+callback	lib/ffi/struct.rb	/^      def callback(params, ret)$/;"	f	class:FFI.Struct
+clear	lib/ffi/struct.rb	/^    def clear$/;"	f	class:FFI.Struct
+const	lib/ffi/tools/const_generator.rb	/^    def const(name, format = nil, cast = '', ruby_name = nil, converter = nil,$/;"	f	class:FFI.ConstGenerator
+constants	lib/ffi/tools/generator.rb	/^    def constants(options = {}, &block)$/;"	f	class:FFI.Generator
+converted_value	lib/ffi/tools/const_generator.rb	/^    def converted_value$/;"	f	class:FFI.ConstGenerator.ConstGenerator
+dump_config	lib/ffi/tools/struct_generator.rb	/^    def dump_config(io)$/;"	f	class:FFI
+dump_constants	lib/ffi/tools/const_generator.rb	/^    def dump_constants(io)$/;"	f	class:FFI.ConstGenerator
+enclosing_module	lib/ffi/struct.rb	/^      def enclosing_module$/;"	f	class:FFI.Struct
+enum	lib/ffi/library.rb	/^    def enum(*args)$/;"	f
+enum_type	lib/ffi/library.rb	/^    def enum_type(name)$/;"	f
+enum_value	lib/ffi/library.rb	/^    def enum_value(symbol)$/;"	f
+errno	lib/ffi/errno.rb	/^  def self.errno$/;"	F	class:FFI
+errno	lib/ffi/errno.rb	/^  def self.errno=(error)$/;"	F	class:FFI
+extended	lib/ffi/library.rb	/^    def self.extended(mod)$/;"	F	class:FFI.Library
+ffi_convention	lib/ffi/library.rb	/^    def ffi_convention(convention = nil)$/;"	f	class:FFI.Library
+ffi_lib	lib/ffi/library.rb	/^    def ffi_lib(*names)$/;"	f	class:FFI.Library
+ffi_lib_flags	lib/ffi/library.rb	/^    def ffi_lib_flags(*flags)$/;"	f	class:FFI.Library
+ffi_libraries	lib/ffi/library.rb	/^    def ffi_libraries$/;"	f	class:FFI.Library
+field	lib/ffi/tools/struct_generator.rb	/^    def field(name, type=nil)$/;"	f	class:FFI
+field_for_type	lib/ffi/struct_layout_builder.rb	/^    def field_for_type(name, offset, type)$/;"	f	class:FFI.StructLayoutBuilder
+find	lib/ffi/enum.rb	/^    def find(query)$/;"	f	class:FFI.Enums
+find_field_type	lib/ffi/struct.rb	/^      def find_field_type(type, mod = enclosing_module)$/;"	f	class:FFI.Struct
+find_type	lib/ffi/library.rb	/^    def find_type(t)$/;"	f
+find_type	lib/ffi/struct.rb	/^      def find_type(type, mod = enclosing_module)$/;"	f	class:FFI.Struct
+find_type	lib/ffi/types.rb	/^  def self.find_type(name, type_map = nil)$/;"	F	class:FFI
+for_fd	lib/ffi/io.rb	/^    def self.for_fd(fd, mode = "r")$/;"	F	class:FFI.IO
+found?	lib/ffi/tools/struct_generator.rb	/^    def found?$/;"	f	class:FFI
+free	lib/ffi/autopointer.rb	/^      def free$/;"	f	class:FFI.Releaser
+free	lib/ffi/autopointer.rb	/^    def free$/;"	f	class:FFI
+from_native	lib/ffi/autopointer.rb	/^    def self.from_native(val, ctx)$/;"	F	class:FFI
+from_native	lib/ffi/enum.rb	/^    def from_native(val, ctx)$/;"	f	class:FFI
+from_native	lib/ffi/struct.rb	/^      def from_native(ptr, ctx)$/;"	f	class:FFI.Struct.ManagedStructConverter
+from_native	lib/ffi/types.rb	/^    def self.from_native(val, ctx)$/;"	F	class:FFI.StrPtrConverter
+function_names	lib/ffi/library.rb	/^    def function_names(name, arg_types)$/;"	f	class:FFI
+generate	lib/ffi/tools/types_generator.rb	/^    def self.generate(options = {})$/;"	F	class:FFI.TypesGenerator
+generate_layout	lib/ffi/tools/struct_generator.rb	/^    def generate_layout$/;"	f	class:FFI
+get	lib/ffi/struct.rb	/^      def get(ptr)$/;"	f	class:FFI.StructLayout.Enum
+get	lib/ffi/struct.rb	/^      def get(ptr)$/;"	f	class:FFI.StructLayout.InnerStruct
+get	lib/ffi/struct.rb	/^      def get(ptr)$/;"	f	class:FFI.StructLayout.Mapped
+get_field	lib/ffi/tools/struct_generator.rb	/^    def get_field(name)$/;"	f	class:FFI
+hash_layout	lib/ffi/struct.rb	/^      def hash_layout(builder, spec)$/;"	f	class:FFI.Struct
+in	lib/ffi/struct.rb	/^    def self.in$/;"	F	class:FFI.Struct
+include	lib/ffi/tools/const_generator.rb	/^    def include(*i)$/;"	f	class:FFI.ConstGenerator.to_ruby
+include	lib/ffi/tools/struct_generator.rb	/^    def include(i)$/;"	f	class:FFI
+init	lib/ffi/variadic.rb	/^    def init(arg_types, type_map)$/;"	f	class:FFI.VariadicInvoker
+initialize	lib/ffi/autopointer.rb	/^      def initialize(ptr, proc)$/;"	f	class:FFI.Releaser
+initialize	lib/ffi/autopointer.rb	/^    def initialize(ptr, proc=nil, &block)$/;"	f	class:FFI.AutoPointer
+initialize	lib/ffi/enum.rb	/^    def initialize$/;"	f	class:FFI.Enums
+initialize	lib/ffi/enum.rb	/^    def initialize(info, tag=nil)$/;"	f	class:FFI.Enum
+initialize	lib/ffi/library.rb	/^    def initialize(function, *libraries)$/;"	f	class:FFI.NotFoundError
+initialize	lib/ffi/managedstruct.rb	/^    def initialize(pointer=nil)$/;"	f	class:FFI.ManagedStruct
+initialize	lib/ffi/struct.rb	/^      def initialize(name, offset, type, orig_field)$/;"	f	class:FFI.StructLayout.Mapped
+initialize	lib/ffi/struct.rb	/^      def initialize(struct_class)$/;"	f	class:FFI.Struct.ManagedStructConverter
+initialize	lib/ffi/struct_layout_builder.rb	/^    def initialize$/;"	f	class:FFI.StructLayoutBuilder
+initialize	lib/ffi/tools/const_generator.rb	/^    def initialize(name, format, cast, ruby_name = nil, converter=nil)$/;"	f	class:FFI.ConstGenerator.ConstGenerator
+initialize	lib/ffi/tools/const_generator.rb	/^    def initialize(prefix = nil, options = {})$/;"	f	class:FFI.ConstGenerator
+initialize	lib/ffi/tools/generator.rb	/^    def initialize(ffi_name, rb_name, options = {})$/;"	f	class:FFI.Generator
+initialize	lib/ffi/tools/generator_task.rb	/^  def initialize(rb_names)$/;"	f	class:FFI
+initialize	lib/ffi/tools/struct_generator.rb	/^    def initialize(name, options = {})$/;"	f	class:FFI.StructGenerator
+initialize	lib/ffi/tools/struct_generator.rb	/^    def initialize(name, type)$/;"	f	class:StructGenerator
+is_os	lib/ffi/platform.rb	/^    def self.is_os(os)$/;"	F
+layout	lib/ffi/struct.rb	/^      def layout(*spec)$/;"	f	class:FFI.Struct
+mac	lib/ffi/platform.rb	/^    def self.mac?$/;"	F
+map_library_name	lib/ffi/library.rb	/^  def self.map_library_name(lib)$/;"	F	class:FFI
+members	lib/ffi/struct.rb	/^    def members$/;"	f	class:FFI.Struct
+members	lib/ffi/struct.rb	/^    def self.members$/;"	F	class:FFI.Struct
+name	lib/ffi/tools/struct_generator.rb	/^    def name(n)$/;"	f	class:FFI
+native_read	lib/ffi/io.rb	/^    def self.native_read(io, buf, len)$/;"	F	class:FFI.IO
+native_type	lib/ffi/autopointer.rb	/^    def self.native_type$/;"	F	class:FFI
+native_type	lib/ffi/enum.rb	/^    def native_type$/;"	f	class:FFI.Enum
+offset=	lib/ffi/tools/struct_generator.rb	/^    def offset=(o)$/;"	f	class:StructGenerator
+offset_of	lib/ffi/struct.rb	/^    def offset_of(field_name)$/;"	f	class:FFI.StructLayout
+offset_of	lib/ffi/struct.rb	/^    def offset_of(name)$/;"	f	class:FFI.Struct
+offset_of	lib/ffi/struct.rb	/^    def self.offset_of(name)$/;"	F	class:FFI.Struct
+offsets	lib/ffi/struct.rb	/^    def offsets$/;"	f	class:FFI.Struct
+offsets	lib/ffi/struct.rb	/^    def offsets$/;"	f	class:FFI.StructLayout
+offsets	lib/ffi/struct.rb	/^    def self.offsets$/;"	F	class:FFI.Struct
+options	lib/ffi/tools/const_generator.rb	/^    def self.options$/;"	F	class:FFI.ConstGenerator
+options	lib/ffi/tools/const_generator.rb	/^    def self.options=(options)$/;"	F	class:FFI.ConstGenerator
+options	lib/ffi/tools/struct_generator.rb	/^    def self.options$/;"	F	class:FFI.StructGenerator
+options	lib/ffi/tools/struct_generator.rb	/^    def self.options=(options)$/;"	F	class:FFI.StructGenerator
+out	lib/ffi/struct.rb	/^    def self.out$/;"	F	class:FFI.Struct
+packed	lib/ffi/struct.rb	/^      def packed(packed = 1)$/;"	f	class:FFI.Struct
+packed=	lib/ffi/struct_layout_builder.rb	/^    def packed=(packed)$/;"	f	class:FFI.StructLayoutBuilder
+ptr	lib/ffi/struct.rb	/^    def self.ptr(flags = :inout)$/;"	F	class:FFI.Struct
+put	lib/ffi/struct.rb	/^      def put(ptr, value)$/;"	f	class:FFI.StructLayout.Enum
+put	lib/ffi/struct.rb	/^      def put(ptr, value)$/;"	f	class:FFI.StructLayout.Mapped
+put	lib/ffi/struct.rb	/^     def put(ptr, value)$/;"	f	class:FFI.StructLayout.InnerStruct
+read_array_of_type	lib/ffi/pointer.rb	/^    def read_array_of_type(type, reader, length)$/;"	f	class:FFI.Pointer
+read_string	lib/ffi/pointer.rb	/^    def read_string(len=nil)$/;"	f	class:FFI.Pointer
+read_string_length	lib/ffi/pointer.rb	/^    def read_string_length(len)$/;"	f	class:FFI.Pointer
+read_string_to_null	lib/ffi/pointer.rb	/^    def read_string_to_null$/;"	f	class:FFI.Pointer
+release	lib/ffi/autopointer.rb	/^      def release(ptr)$/;"	f	class:FFI.CallableReleaser
+release	lib/ffi/autopointer.rb	/^      def release(ptr)$/;"	f	class:FFI.DefaultReleaser
+ruby_name	lib/ffi/tools/const_generator.rb	/^    def ruby_name$/;"	f	class:FFI.ConstGenerator.ConstGenerator
+size	lib/ffi/pointer.rb	/^    def self.size$/;"	F	class:FFI.Pointer
+size	lib/ffi/struct.rb	/^    def self.size$/;"	F	class:FFI.Struct
+size	lib/ffi/struct.rb	/^    def self.size=(size)$/;"	F	class:FFI.Struct
+size	lib/ffi/struct.rb	/^    def size$/;"	f	class:FFI.Struct
+size=	lib/ffi/struct_layout_builder.rb	/^    def size=(size)$/;"	f	class:FFI.StructLayoutBuilder
+struct	lib/ffi/tools/generator.rb	/^    def struct(options = {}, &block)$/;"	f	class:FFI.Generator
+symbol_map	lib/ffi/enum.rb	/^    def symbol_map$/;"	f	class:FFI.Enum
+symbols	lib/ffi/enum.rb	/^    def symbols$/;"	f	class:FFI.Enum
+to_config	lib/ffi/tools/struct_generator.rb	/^    def to_config(name)$/;"	f	class:StructGenerator
+to_native	lib/ffi/enum.rb	/^    def to_native(val, ctx)$/;"	f	class:FFI.Enum
+to_ptr	lib/ffi/struct.rb	/^    def to_ptr$/;"	f	class:FFI.Struct
+to_ruby	lib/ffi/tools/const_generator.rb	/^    def to_ruby$/;"	f	class:FFI.ConstGenerator
+to_ruby	lib/ffi/tools/const_generator.rb	/^    def to_ruby$/;"	f	class:FFI.ConstGenerator.ConstGenerator
+to_s	lib/ffi/tools/generator.rb	/^    def to_s$/;"	f	class:FFI.Generator
+type_size	lib/ffi/types.rb	/^  def self.type_size(type)$/;"	F	class:FFI
+typedef	lib/ffi/library.rb	/^    def typedef(old, add, info=nil)$/;"	f
+typedef	lib/ffi/types.rb	/^  def self.typedef(old, add)$/;"	F	class:FFI
+union=	lib/ffi/struct_layout_builder.rb	/^    def union=(is_union)$/;"	f	class:FFI.StructLayoutBuilder
+union?	lib/ffi/struct_layout_builder.rb	/^    def union?$/;"	f	class:FFI.StructLayoutBuilder
+unix	lib/ffi/platform.rb	/^    def self.unix?$/;"	F
+val	lib/ffi/struct.rb	/^    def self.val$/;"	F	class:FFI.Struct
+values	lib/ffi/struct.rb	/^    def values$/;"	f	class:FFI.Struct
+windows	lib/ffi/platform.rb	/^    def self.windows?$/;"	F
+write_array_of_type	lib/ffi/pointer.rb	/^    def write_array_of_type(type, writer, ary)$/;"	f	class:FFI.Pointer
+write_string	lib/ffi/pointer.rb	/^    def write_string(str, len=nil)$/;"	f	class:FFI.Pointer
+write_string_length	lib/ffi/pointer.rb	/^    def write_string_length(str, len)$/;"	f	class:FFI.Pointer

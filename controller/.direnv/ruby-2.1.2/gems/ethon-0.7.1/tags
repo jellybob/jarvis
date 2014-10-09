@@ -1,0 +1,307 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Actionable	lib/ethon/easy/http/actionable.rb	/^      module Actionable$/;"	m	class:Ethon.Easy.Http
+Callbacks	lib/ethon/easy/callbacks.rb	/^    module Callbacks$/;"	m	class:Ethon.Easy
+Codes	lib/ethon/curls/codes.rb	/^    module Codes$/;"	m	class:Ethon.Curls
+Curl	lib/ethon/curl.rb	/^  module Curl$/;"	m	class:Ethon
+Curl	lib/ethon/curls/classes.rb	/^  module Curl$/;"	m	class:Ethon
+Curl	lib/ethon/curls/constants.rb	/^  module Curl$/;"	m	class:Ethon
+Curl	lib/ethon/curls/settings.rb	/^  module Curl$/;"	m	class:Ethon
+Curls	lib/ethon/curls/codes.rb	/^  module Curls # :nodoc:$/;"	m	class:Ethon
+Curls	lib/ethon/curls/form_options.rb	/^  module Curls$/;"	m	class:Ethon
+Curls	lib/ethon/curls/functions.rb	/^  module Curls$/;"	m	class:Ethon
+Curls	lib/ethon/curls/infos.rb	/^  module Curls$/;"	m	class:Ethon
+Curls	lib/ethon/curls/messages.rb	/^  module Curls$/;"	m	class:Ethon
+Curls	lib/ethon/curls/options.rb	/^  module Curls$/;"	m	class:Ethon
+Custom	lib/ethon/easy/http/custom.rb	/^      class Custom$/;"	c	class:Ethon.Easy.Http
+DebugInfo	lib/ethon/easy/debug_info.rb	/^    class DebugInfo$/;"	c	class:Ethon.Easy
+Delete	lib/ethon/easy/http/delete.rb	/^      class Delete$/;"	c	class:Ethon.Easy.Http
+Easy	lib/ethon/easy.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/callbacks.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/debug_info.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/form.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/header.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/actionable.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/custom.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/delete.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/get.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/head.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/options.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/patch.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/post.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/postable.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/put.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/http/putable.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/informations.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/mirror.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/operations.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/options.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/params.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/queryable.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/response_callbacks.rb	/^  class Easy$/;"	c	class:Ethon
+Easy	lib/ethon/easy/util.rb	/^  class Easy # :nodoc:$/;"	c	class:Ethon
+Errors	lib/ethon/errors.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/ethon_error.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/global_init.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/invalid_option.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/invalid_value.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/multi_add.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/multi_fdset.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/multi_remove.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/multi_timeout.rb	/^  module Errors$/;"	m	class:Ethon
+Errors	lib/ethon/errors/select.rb	/^  module Errors$/;"	m	class:Ethon
+Ethon	lib/ethon.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curl.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/classes.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/codes.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/constants.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/form_options.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/functions.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/infos.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/messages.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/options.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/curls/settings.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/callbacks.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/debug_info.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/form.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/header.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/actionable.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/custom.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/delete.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/get.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/head.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/options.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/patch.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/post.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/postable.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/put.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/http/putable.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/informations.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/mirror.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/operations.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/options.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/params.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/queryable.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/response_callbacks.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/easy/util.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/ethon_error.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/global_init.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/invalid_option.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/invalid_value.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/multi_add.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/multi_fdset.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/multi_remove.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/multi_timeout.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/errors/select.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/libc.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/loggable.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/multi.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/multi/operations.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/multi/options.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/multi/stack.rb	/^module Ethon$/;"	m
+Ethon	lib/ethon/version.rb	/^module Ethon$/;"	m
+EthonError	lib/ethon/errors/ethon_error.rb	/^    class EthonError < StandardError$/;"	c	class:Ethon.Errors
+FDSet	lib/ethon/curls/classes.rb	/^    class FDSet < ::FFI::Struct$/;"	c	class:Ethon.Curl
+Form	lib/ethon/easy/form.rb	/^    class Form$/;"	c	class:Ethon.Easy
+FormOptions	lib/ethon/curls/form_options.rb	/^    module FormOptions$/;"	m	class:Ethon.Curls
+Functions	lib/ethon/curls/functions.rb	/^    module Functions$/;"	m	class:Ethon.Curls
+Get	lib/ethon/easy/http/get.rb	/^      class Get$/;"	c	class:Ethon.Easy.Http
+GlobalInit	lib/ethon/errors/global_init.rb	/^    class GlobalInit < EthonError$/;"	c	class:Ethon.Errors
+Head	lib/ethon/easy/http/head.rb	/^      class Head$/;"	c	class:Ethon.Easy.Http
+Header	lib/ethon/easy/header.rb	/^    module Header$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/actionable.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/custom.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/delete.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/get.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/head.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/options.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/patch.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/post.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/postable.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/put.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Http	lib/ethon/easy/http/putable.rb	/^    module Http$/;"	m	class:Ethon.Easy
+Informations	lib/ethon/easy/informations.rb	/^    module Informations$/;"	m	class:Ethon.Easy
+Infos	lib/ethon/curls/infos.rb	/^    module Infos$/;"	m	class:Ethon.Curls
+InvalidOption	lib/ethon/errors/invalid_option.rb	/^    class InvalidOption < EthonError$/;"	c	class:Ethon.Errors
+InvalidValue	lib/ethon/errors/invalid_value.rb	/^    class InvalidValue < EthonError$/;"	c	class:Ethon.Errors
+Libc	lib/ethon/libc.rb	/^  module Libc$/;"	m	class:Ethon
+Loggable	lib/ethon/loggable.rb	/^  module Loggable$/;"	m	class:Ethon
+Message	lib/ethon/easy/debug_info.rb	/^      class Message$/;"	c	class:Ethon.Easy.DebugInfo
+Messages	lib/ethon/curls/messages.rb	/^    module Messages$/;"	m	class:Ethon.Curls
+Mirror	lib/ethon/easy/mirror.rb	/^    class Mirror$/;"	c	class:Ethon.Easy
+Msg	lib/ethon/curls/classes.rb	/^    class Msg < ::FFI::Struct$/;"	c	class:Ethon.Curl
+MsgData	lib/ethon/curls/classes.rb	/^    class MsgData < ::FFI::Union$/;"	c	class:Ethon.Curl
+Multi	lib/ethon/multi.rb	/^  class Multi$/;"	c	class:Ethon
+Multi	lib/ethon/multi/operations.rb	/^  class Multi # :nodoc$/;"	c	class:Ethon
+Multi	lib/ethon/multi/options.rb	/^  class Multi$/;"	c	class:Ethon
+Multi	lib/ethon/multi/stack.rb	/^  class Multi$/;"	c	class:Ethon
+MultiAdd	lib/ethon/errors/multi_add.rb	/^    class MultiAdd < EthonError$/;"	c	class:Ethon.Errors
+MultiFdset	lib/ethon/errors/multi_fdset.rb	/^    class MultiFdset < EthonError$/;"	c	class:Ethon.Errors
+MultiRemove	lib/ethon/errors/multi_remove.rb	/^    class MultiRemove < EthonError$/;"	c	class:Ethon.Errors
+MultiTimeout	lib/ethon/errors/multi_timeout.rb	/^    class MultiTimeout < EthonError$/;"	c	class:Ethon.Errors
+Operations	lib/ethon/easy/operations.rb	/^    module Operations$/;"	m	class:Ethon.Easy
+Operations	lib/ethon/multi/operations.rb	/^    module Operations$/;"	m	class:Ethon.Multi
+Options	lib/ethon/curls/options.rb	/^    module Options$/;"	m	class:Ethon.Curls
+Options	lib/ethon/easy/http/options.rb	/^      class Options$/;"	c	class:Ethon.Easy.Http
+Options	lib/ethon/easy/options.rb	/^    module Options$/;"	m	class:Ethon.Easy
+Options	lib/ethon/multi/options.rb	/^    module Options$/;"	m	class:Ethon.Multi
+Params	lib/ethon/easy/params.rb	/^    class Params$/;"	c	class:Ethon.Easy
+Patch	lib/ethon/easy/http/patch.rb	/^      class Patch$/;"	c	class:Ethon.Easy.Http
+Post	lib/ethon/easy/http/post.rb	/^      class Post$/;"	c	class:Ethon.Easy.Http
+Postable	lib/ethon/easy/http/postable.rb	/^      module Postable$/;"	m	class:Ethon.Easy.Http
+Put	lib/ethon/easy/http/put.rb	/^      class Put$/;"	c	class:Ethon.Easy.Http
+Putable	lib/ethon/easy/http/putable.rb	/^      module Putable$/;"	m	class:Ethon.Easy.Http
+Queryable	lib/ethon/easy/queryable.rb	/^    module Queryable$/;"	m	class:Ethon.Easy
+ResponseCallbacks	lib/ethon/easy/response_callbacks.rb	/^    module ResponseCallbacks$/;"	m	class:Ethon.Easy
+Select	lib/ethon/errors/select.rb	/^    class Select < EthonError$/;"	c	class:Ethon.Errors
+Stack	lib/ethon/multi/stack.rb	/^    module Stack$/;"	m	class:Ethon.Multi
+Timeval	lib/ethon/curls/classes.rb	/^    class Timeval < ::FFI::Struct$/;"	c	class:Ethon.Curl
+Util	lib/ethon/easy/util.rb	/^    module Util$/;"	m	class:Ethon.Easy
+add	lib/ethon/easy/debug_info.rb	/^      def add(type, message)$/;"	f	class:Ethon.Easy.DebugInfo
+add	lib/ethon/multi/stack.rb	/^      def add(easy)$/;"	f	class:Ethon.Multi.Stack
+body	lib/ethon/easy/response_callbacks.rb	/^      def body(chunk)$/;"	f	class:Ethon.Easy.ResponseCallbacks
+body_write_callback	lib/ethon/easy/callbacks.rb	/^      def body_write_callback$/;"	f	class:Ethon.Easy.Callbacks
+build_query_pairs	lib/ethon/easy/queryable.rb	/^      def build_query_pairs(hash)$/;"	f	class:Ethon.Easy.Queryable
+check	lib/ethon/multi/operations.rb	/^      def check$/;"	f	class:Ethon.Multi.Operations
+clear	lib/ethon/curls/classes.rb	/^        def clear; self[:fd_count] = 0; end$/;"	f	class:Ethon.Curl.FDSet
+clear	lib/ethon/curls/classes.rb	/^        def clear; super; end$/;"	f	class:Ethon.Curl.FDSet
+complete	lib/ethon/easy/response_callbacks.rb	/^      def complete$/;"	f	class:Ethon.Easy.ResponseCallbacks
+compose_header	lib/ethon/easy/header.rb	/^      def compose_header(key, value)$/;"	f	class:Ethon.Easy.Header
+debug_callback	lib/ethon/easy/callbacks.rb	/^      def debug_callback$/;"	f	class:Ethon.Easy.Callbacks
+debug_info_types	lib/ethon/curls/infos.rb	/^      def debug_info_types$/;"	f	class:Ethon.Curls.Infos
+default_logger	lib/ethon/loggable.rb	/^    def default_logger$/;"	f	class:Ethon.Loggable
+delete	lib/ethon/multi/stack.rb	/^      def delete(easy)$/;"	f	class:Ethon.Multi.Stack
+double_ptr	lib/ethon/curls/infos.rb	/^      def double_ptr$/;"	f	class:Ethon.Curls.Infos
+easy_codes	lib/ethon/curls/codes.rb	/^      def easy_codes$/;"	f	class:Ethon.Curls.Codes
+easy_handles	lib/ethon/multi/stack.rb	/^      def easy_handles$/;"	f	class:Ethon.Multi.Stack
+empty?	lib/ethon/easy/queryable.rb	/^      def empty?$/;"	f	class:Ethon.Easy.Queryable
+escape	lib/ethon/easy.rb	/^    def escape(value)$/;"	f	class:Ethon.Easy
+escape_zero_byte	lib/ethon/easy/util.rb	/^      def escape_zero_byte(value)$/;"	f	class:Ethon.Easy.Util
+extended	lib/ethon/curls/functions.rb	/^      def self.extended(base)$/;"	F	class:Ethon.Curls.Functions
+fabricate	lib/ethon/easy/http.rb	/^      def fabricate(url, action_name, options)$/;"	f	class:Ethon.Easy.Http
+file_info	lib/ethon/easy/queryable.rb	/^      def file_info(file)$/;"	f	class:Ethon.Easy.Queryable
+first	lib/ethon/easy/form.rb	/^      def first$/;"	f	class:Ethon.Easy.Form
+form	lib/ethon/easy/http/actionable.rb	/^        def form$/;"	f	class:Ethon.Easy.Http.Actionable
+form_add	lib/ethon/easy/form.rb	/^      def form_add(name, content)$/;"	f	class:Ethon.Easy.Form
+form_options	lib/ethon/curls/form_options.rb	/^      def form_options$/;"	f	class:Ethon.Curls.FormOptions
+from_easy	lib/ethon/easy/mirror.rb	/^      def self.from_easy(easy)$/;"	F	class:Ethon.Easy.Mirror
+get_info_double	lib/ethon/curls/infos.rb	/^      def get_info_double(option, handle)$/;"	f	class:Ethon.Curls.Infos
+get_info_long	lib/ethon/curls/infos.rb	/^      def get_info_long(option, handle)$/;"	f	class:Ethon.Curls.Infos
+get_info_string	lib/ethon/curls/infos.rb	/^      def get_info_string(option, handle)$/;"	f	class:Ethon.Curls.Infos
+get_timeout	lib/ethon/multi/operations.rb	/^      def get_timeout$/;"	f	class:Ethon.Multi.Operations
+handle	lib/ethon/easy/operations.rb	/^      def handle$/;"	f	class:Ethon.Easy.Operations
+handle	lib/ethon/multi/operations.rb	/^      def handle$/;"	f	class:Ethon.Multi.Operations
+header_list	lib/ethon/easy/header.rb	/^      def header_list$/;"	f	class:Ethon.Easy.Header
+header_write_callback	lib/ethon/easy/callbacks.rb	/^      def header_write_callback$/;"	f	class:Ethon.Easy.Callbacks
+headers	lib/ethon/easy/header.rb	/^      def headers$/;"	f	class:Ethon.Easy.Header
+headers	lib/ethon/easy/response_callbacks.rb	/^      def headers$/;"	f	class:Ethon.Easy.ResponseCallbacks
+headers=	lib/ethon/easy/header.rb	/^      def headers=(headers)$/;"	f	class:Ethon.Easy.Header
+http_request	lib/ethon/easy/http.rb	/^      def http_request(url, action_name, options = {})$/;"	f	class:Ethon.Easy.Http
+included	lib/ethon/easy/callbacks.rb	/^      def self.included(base)$/;"	F	class:Ethon.Easy.Callbacks
+included	lib/ethon/easy/queryable.rb	/^      def self.included(base)$/;"	F	class:Ethon.Easy.Queryable
+info_types	lib/ethon/curls/infos.rb	/^      def info_types$/;"	f	class:Ethon.Curls.Infos
+informations_to_log	lib/ethon/easy/mirror.rb	/^      def self.informations_to_log$/;"	F	class:Ethon.Easy.Mirror
+informations_to_mirror	lib/ethon/easy/mirror.rb	/^      def self.informations_to_mirror$/;"	F	class:Ethon.Easy.Mirror
+infos	lib/ethon/curls/infos.rb	/^      def infos$/;"	f	class:Ethon.Curls.Infos
+init	lib/ethon/curl.rb	/^      def init$/;"	f	class:Ethon.Curl
+init_vars	lib/ethon/multi/operations.rb	/^      def init_vars$/;"	f	class:Ethon.Multi.Operations
+initialize	lib/ethon/easy.rb	/^    def initialize(options = {})$/;"	f	class:Ethon.Easy
+initialize	lib/ethon/easy/debug_info.rb	/^        def initialize(type, message)$/;"	f	class:Ethon.Easy.DebugInfo.Message
+initialize	lib/ethon/easy/debug_info.rb	/^      def initialize$/;"	f	class:Ethon.Easy.DebugInfo
+initialize	lib/ethon/easy/form.rb	/^      def initialize(easy, params)$/;"	f	class:Ethon.Easy.Form
+initialize	lib/ethon/easy/http/actionable.rb	/^        def initialize(url, options)$/;"	f	class:Ethon.Easy.Http.Actionable
+initialize	lib/ethon/easy/http/custom.rb	/^        def initialize(verb, url, options)$/;"	f	class:Ethon.Easy.Http.Custom
+initialize	lib/ethon/easy/mirror.rb	/^      def initialize(options = {})$/;"	f	class:Ethon.Easy.Mirror
+initialize	lib/ethon/easy/params.rb	/^      def initialize(easy, params)$/;"	f	class:Ethon.Easy.Params
+initialize	lib/ethon/errors/global_init.rb	/^      def initialize$/;"	f	class:Ethon.Errors.GlobalInit
+initialize	lib/ethon/errors/invalid_option.rb	/^      def initialize(option)$/;"	f	class:Ethon.Errors.InvalidOption
+initialize	lib/ethon/errors/invalid_value.rb	/^      def initialize(option, value)$/;"	f	class:Ethon.Errors.InvalidValue
+initialize	lib/ethon/errors/multi_add.rb	/^      def initialize(code, easy)$/;"	f	class:Ethon.Errors.MultiAdd
+initialize	lib/ethon/errors/multi_fdset.rb	/^      def initialize(code)$/;"	f	class:Ethon.Errors.MultiFdset
+initialize	lib/ethon/errors/multi_remove.rb	/^      def initialize(code, easy)$/;"	f	class:Ethon.Errors.MultiRemove
+initialize	lib/ethon/errors/multi_timeout.rb	/^      def initialize(code)$/;"	f	class:Ethon.Errors.MultiTimeout
+initialize	lib/ethon/errors/select.rb	/^      def initialize(errno)$/;"	f	class:Ethon.Errors.Select
+initialize	lib/ethon/multi.rb	/^    def initialize(options = {})$/;"	f	class:Ethon.Multi
+last	lib/ethon/easy/form.rb	/^      def last$/;"	f	class:Ethon.Easy.Form
+log_informations	lib/ethon/easy/mirror.rb	/^      def log_informations$/;"	f	class:Ethon.Easy.Mirror
+log_inspect	lib/ethon/easy.rb	/^    def log_inspect$/;"	f	class:Ethon.Easy
+logger	lib/ethon/loggable.rb	/^    def logger$/;"	f	class:Ethon.Loggable
+logger=	lib/ethon/loggable.rb	/^    def logger=(logger)$/;"	f	class:Ethon.Loggable
+long_ptr	lib/ethon/curls/infos.rb	/^      def long_ptr$/;"	f	class:Ethon.Curls.Infos
+materialize	lib/ethon/easy/form.rb	/^      def materialize$/;"	f	class:Ethon.Easy.Form
+max_total_connections=	lib/ethon/multi/options.rb	/^      def max_total_connections=(value)$/;"	f	class:Ethon.Multi.Options
+maxconnects=	lib/ethon/multi/options.rb	/^      def maxconnects=(value)$/;"	f	class:Ethon.Multi.Options
+messages_for	lib/ethon/easy/debug_info.rb	/^      def messages_for(type)$/;"	f	class:Ethon.Easy.DebugInfo
+mime_type	lib/ethon/easy/queryable.rb	/^      def mime_type(filename)$/;"	f	class:Ethon.Easy.Queryable
+mirror	lib/ethon/easy.rb	/^    def mirror$/;"	f	class:Ethon.Easy
+msg_codes	lib/ethon/curls/messages.rb	/^      def msg_codes$/;"	f	class:Ethon.Curls.Messages
+multi_codes	lib/ethon/curls/codes.rb	/^      def multi_codes$/;"	f	class:Ethon.Curls.Codes
+multipart?	lib/ethon/easy/form.rb	/^      def multipart?$/;"	f	class:Ethon.Easy.Form
+on_body	lib/ethon/easy/response_callbacks.rb	/^      def on_body(&block)$/;"	f	class:Ethon.Easy.ResponseCallbacks
+on_complete	lib/ethon/easy/response_callbacks.rb	/^      def on_complete(&block)$/;"	f	class:Ethon.Easy.ResponseCallbacks
+on_headers	lib/ethon/easy/response_callbacks.rb	/^      def on_headers(&block)$/;"	f	class:Ethon.Easy.ResponseCallbacks
+ongoing?	lib/ethon/multi/operations.rb	/^      def ongoing?$/;"	f	class:Ethon.Multi.Operations
+option	lib/ethon/curls/options.rb	/^      def self.option(ftype,name,type,num,opts=nil)$/;"	F	class:Ethon.Curls.Options
+option_alias	lib/ethon/curls/options.rb	/^      def self.option_alias(ftype,name,*aliases)$/;"	F	class:Ethon.Curls.Options
+option_type	lib/ethon/curls/options.rb	/^      def self.option_type(type)$/;"	F	class:Ethon.Curls.Options
+options	lib/ethon/easy/http/actionable.rb	/^        def options$/;"	f	class:Ethon.Easy.Http.Actionable
+pairs_for	lib/ethon/easy/queryable.rb	/^      def pairs_for(v, key, pairs)$/;"	f	class:Ethon.Easy.Queryable
+params	lib/ethon/easy/http/actionable.rb	/^        def params$/;"	f	class:Ethon.Easy.Http.Actionable
+perform	lib/ethon/easy/operations.rb	/^      def perform$/;"	f	class:Ethon.Easy.Operations
+perform	lib/ethon/multi/operations.rb	/^      def perform$/;"	f	class:Ethon.Multi.Operations
+pipelining=	lib/ethon/multi/options.rb	/^      def pipelining=(value)$/;"	f	class:Ethon.Multi.Options
+prepare	lib/ethon/easy/operations.rb	/^      def prepare$/;"	f	class:Ethon.Easy.Operations
+prepare	lib/ethon/multi/operations.rb	/^      def prepare$/;"	f	class:Ethon.Multi.Operations
+query_pairs	lib/ethon/easy/queryable.rb	/^      def query_pairs$/;"	f	class:Ethon.Easy.Queryable
+rails_logger	lib/ethon/loggable.rb	/^    def rails_logger$/;"	f	class:Ethon.Loggable
+read_callback	lib/ethon/easy/callbacks.rb	/^      def read_callback$/;"	f	class:Ethon
+recursively_generate_pairs	lib/ethon/easy/queryable.rb	/^      def recursively_generate_pairs(h, prefix, pairs)$/;"	f	class:Ethon.Easy.Queryable
+reset	lib/ethon/easy.rb	/^    def reset$/;"	f	class:Ethon.Easy
+reset_fds	lib/ethon/multi/operations.rb	/^      def reset_fds$/;"	f	class:Ethon.Multi.Operations
+run	lib/ethon/multi/operations.rb	/^      def run$/;"	f	class:Ethon.Multi.Operations
+running_count	lib/ethon/multi/operations.rb	/^      def running_count$/;"	f	class:Ethon.Multi.Operations
+set_attributes	lib/ethon/easy.rb	/^    def set_attributes(options)$/;"	f	class:Ethon.Easy
+set_attributes	lib/ethon/multi.rb	/^    def set_attributes(options)$/;"	f	class:Ethon.Multi
+set_callbacks	lib/ethon/easy/callbacks.rb	/^      def set_callbacks$/;"	f	class:Ethon.Easy.Callbacks
+set_fds	lib/ethon/multi/operations.rb	/^      def set_fds(timeout)$/;"	f	class:Ethon.Multi.Operations
+set_form	lib/ethon/easy/http/actionable.rb	/^        def set_form(easy)$/;"	f	class:Ethon.Easy.Http.Actionable
+set_form	lib/ethon/easy/http/postable.rb	/^        def set_form(easy)$/;"	f	class:Ethon.Easy.Http.Postable
+set_form	lib/ethon/easy/http/putable.rb	/^        def set_form(easy)$/;"	f	class:Ethon.Easy.Http.Putable
+set_option	lib/ethon/curls/options.rb	/^      def set_option(option, value, handle, type = :easy)$/;"	f	class:Ethon.Curls.Options
+set_params	lib/ethon/easy/http/actionable.rb	/^        def set_params(easy)$/;"	f	class:Ethon.Easy.Http.Actionable
+set_read_callback	lib/ethon/easy/callbacks.rb	/^      def set_read_callback(body)$/;"	f	class:Ethon.Easy.Callbacks
+setup	lib/ethon/easy/http/actionable.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Actionable
+setup	lib/ethon/easy/http/custom.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Custom
+setup	lib/ethon/easy/http/delete.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Delete
+setup	lib/ethon/easy/http/get.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Get
+setup	lib/ethon/easy/http/head.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Head
+setup	lib/ethon/easy/http/options.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Options
+setup	lib/ethon/easy/http/patch.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Patch
+setup	lib/ethon/easy/http/post.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Post
+setup	lib/ethon/easy/http/put.rb	/^        def setup(easy)$/;"	f	class:Ethon.Easy.Http.Put
+setup_garbage_collection	lib/ethon/easy/form.rb	/^      def setup_garbage_collection$/;"	f	class:Ethon.Easy.Form
+socketdata=	lib/ethon/multi/options.rb	/^      def socketdata=(value)$/;"	f	class:Ethon.Multi.Options
+socketfunction=	lib/ethon/multi/options.rb	/^      def socketfunction=(value)$/;"	f	class:Ethon.Multi.Options
+string_ptr	lib/ethon/curls/infos.rb	/^      def string_ptr$/;"	f	class:Ethon.Curls.Infos
+supports_zlib?	lib/ethon/easy/informations.rb	/^      def supports_zlib?$/;"	f	class:Ethon.Easy.Informations
+timerdata=	lib/ethon/multi/options.rb	/^      def timerdata=(value)$/;"	f	class:Ethon.Multi.Options
+timerfunction=	lib/ethon/multi/options.rb	/^      def timerfunction=(value)$/;"	f	class:Ethon.Multi.Options
+to_a	lib/ethon/easy/debug_info.rb	/^      def to_a$/;"	f	class:Ethon.Easy.DebugInfo
+to_h	lib/ethon/easy/debug_info.rb	/^      def to_h$/;"	f	class:Ethon.Easy.DebugInfo
+to_hash	lib/ethon/easy.rb	/^    def to_hash$/;"	f	class:Ethon.Easy
+to_s	lib/ethon/easy/queryable.rb	/^      def to_s$/;"	f	class:Ethon.Easy.Queryable
+trigger	lib/ethon/multi/operations.rb	/^      def trigger(running_count_pointer)$/;"	f	class:Ethon.Multi.Operations
+url	lib/ethon/easy/http/actionable.rb	/^        def url$/;"	f	class:Ethon.Easy.Http.Actionable
+url=	lib/ethon/easy/options.rb	/^      def url=(value)$/;"	f	class:Ethon.Easy.Options
+value_for	lib/ethon/multi/options.rb	/^      def value_for(value, type, option = nil)$/;"	f	class:Ethon.Multi.Options
+windows	lib/ethon/curl.rb	/^    def self.windows?$/;"	F	class:Ethon.Curl
+windows	lib/ethon/libc.rb	/^    def self.windows?$/;"	F	class:Ethon.Libc

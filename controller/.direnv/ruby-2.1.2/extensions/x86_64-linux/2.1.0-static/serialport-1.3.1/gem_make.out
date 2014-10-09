@@ -1,0 +1,53 @@
+/home/jon/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+checking for OS... linux
+checking for termios.h... yes
+checking for unistd.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling win_serialport_impl.c
+compiling posix_serialport_impl.c
+posix_serialport_impl.c: In function ‘sp_create_impl’:
+posix_serialport_impl.c:94:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+       "/dev/ttyS0", "/dev/ttyS1", "/dev/ttyS2", "/dev/ttyS3",
+       ^
+posix_serialport_impl.c:94:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+posix_serialport_impl.c:94:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+posix_serialport_impl.c:94:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+posix_serialport_impl.c:95:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+       "/dev/ttyS4", "/dev/ttyS5", "/dev/ttyS6", "/dev/ttyS7"
+       ^
+posix_serialport_impl.c:95:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+posix_serialport_impl.c:95:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+posix_serialport_impl.c:109:4: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+    };
+    ^
+posix_serialport_impl.c:114:4: warning: passing argument 1 of ‘rb_obj_setup’ makes integer from pointer without a cast [enabled by default]
+    OBJSETUP(sp, class, T_FILE);
+    ^
+In file included from /home/jon/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby.h:33:0,
+                 from serialport.h:24,
+                 from posix_serialport_impl.c:21:
+/home/jon/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby/ruby.h:692:7: note: expected ‘VALUE’ but argument is of type ‘struct RFile *’
+ VALUE rb_obj_setup(VALUE obj, VALUE klass, VALUE type);
+       ^
+posix_serialport_impl.c:121:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if (num_port < 0 || num_port > sizeof(ports) / sizeof(ports[0]))
+                                       ^
+In file included from /home/jon/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby.h:33:0,
+                 from serialport.h:24,
+                 from posix_serialport_impl.c:21:
+/home/jon/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby/ruby.h:580:35: warning: call to ‘ruby_safe_level_4_warning’ declared with attribute warning: $SAFE=4 is obsolete [enabled by default]
+ #define rb_secure(level) rb_secure(RUBY_SAFE_LEVEL_CHECK(level, warning))
+                                   ^
+posix_serialport_impl.c:113:4: note: in expansion of macro ‘rb_secure’
+    rb_secure(4);
+    ^
+compiling serialport.c
+linking shared-object serialport.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 serialport.so ./.gem.20141009-15176-38hhtl
+installing default serialport libraries

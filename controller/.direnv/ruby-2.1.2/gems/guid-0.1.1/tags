@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+==	lib/guid.rb	/^  def ==(other)$/;"	f	class:Guid
+Guid	lib/guid.rb	/^class Guid$/;"	c
+GuidTest	lib/guid.rb	/^  class GuidTest < Test::Unit::TestCase$/;"	c
+Guid_Unix_	lib/guid.rb	/^module Guid_Unix_$/;"	m
+Guid_Win32_	lib/guid.rb	/^  module Guid_Win32_$/;"	m
+from_raw	lib/guid.rb	/^  def self.from_raw(bytes)$/;"	F	class:Guid
+from_s	lib/guid.rb	/^  def self.from_s(s)$/;"	F	class:Guid
+hexdigest	lib/guid.rb	/^  def hexdigest$/;"	f	class:Guid
+initialize	lib/guid.rb	/^    def initialize$/;"	f	class:Guid_Win32_
+initialize	lib/guid.rb	/^  def initialize$/;"	f	class:Guid_Unix_
+inspect	lib/guid.rb	/^  def inspect$/;"	f	class:Guid
+lastErrorMessage	lib/guid.rb	/^    def lastErrorMessage$/;"	f	class:Guid_Win32_
+raw	lib/guid.rb	/^  def raw$/;"	f	class:Guid
+test_from_raw	lib/guid.rb	/^    def test_from_raw$/;"	f	class:GuidTest
+test_from_s	lib/guid.rb	/^    def test_from_s$/;"	f	class:GuidTest
+test_new	lib/guid.rb	/^    def test_new$/;"	f	class:GuidTest
+to_s	lib/guid.rb	/^  def to_s$/;"	f	class:Guid
+win32?	lib/guid.rb	/^    def win32?$/;"	f	class:Guid
