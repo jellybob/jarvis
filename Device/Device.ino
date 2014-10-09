@@ -6,11 +6,13 @@
   #include <DueFlashStorage.h>
   DueFlashStorage dueFlashStorage;
   #define FLASH dueFlashStorage
+  
   #define DATA_BUS SerialUSB
   #define DEBUG_LED 72
 #else
   #include <EEPROM.h>
   #define FLASH EEPROM
+  
   #define DATA_BUS Serial
   #define DEBUG_LED 13
 #endif
@@ -79,18 +81,16 @@ void serialEvent() {
 }
 
 long getUniqueID() {
-  //if (FLASH.read(0) == 255) {
-  //  for (int i = 0; i < 4; i++) {
-  //    FLASH.write(i, random(255)); 
-  //  }
-  //}
+  if (FLASH.read(0) == 255) {
+    for (int i = 0; i < 4; i++) {
+      FLASH.write(i, random(255)); 
+    }
+  }
   
-  //long id = FLASH.read(0);
-  //for (int i = 1; i < 4; i++) {
-  //   id = id * FLASH.read(i);
-  //}
+  long id = FLASH.read(0);
+  for (int i = 1; i < 4; i++) {
+     id = id * FLASH.read(i);
+  }
   
-  //return id;
-  
-  return 255;
+  return id;
 }
