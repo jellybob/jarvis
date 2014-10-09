@@ -8,7 +8,11 @@ world.
 ## Sub-projects
 
 * Controller: The API that drives everything.
-* IRLight: Arudino firmware to send messages to IR controlled lights.
+  * `api.rb`: A Sinatra based HTTP API to coordinate devices.
+  * `serial_controller.rb`: Translation between the HTTP API and Arduino
+    devices on a serial port.
+* Device: Arduino firmware for interfacing with a device. Currently turns
+  my TV on and off if you uncomment the code.
 * IRDump: Arudino firmeware to read command codes from infrared remotes.
 * IRSend: Proof of concept sketch to send my TV a power signal.
 
@@ -36,3 +40,10 @@ and to send IR commands to the correct pin.
 
 At some point I'll shrink things down a bit, and hopefully be able to biuild the whole
 lot into the bulb itself.
+
+## Thanks
+
+All the thanks go to EMF, for giving me a small stack of Arduino devices packed
+with handy peripherals over the years, a few great weekends, and lots of convesations
+with people convincing me this hardware stuff isn't quite so hard as it looks. Keep 'em
+coming.
