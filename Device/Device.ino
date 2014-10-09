@@ -2,6 +2,8 @@
 #define MANUFACTURER "Jon Wood"
 #define DEVICE_TYPE "Generic"
 
+#define MAX_ARGS 20
+
 #if defined(__SAM3X8E__) || defined(__SAM3X8H)
   #include <DueFlashStorage.h>
   DueFlashStorage dueFlashStorage;
@@ -21,12 +23,11 @@
 IRsend irsend;
 
 long uniqueID;
-String data;
-bool dataReceived;
+String commandBuffer[MAX_ARGS];
+bool commandReceived;
 
 void setup() {
-  dataReceived = false;
-  data.reserve(200);
+  resetCommandBuffer();
   uniqueID = getUniqueID();
   
   DATA_BUS.begin(9600);
@@ -34,24 +35,47 @@ void setup() {
 
 void loop() {
   if (DATA_BUS.available()) {
-    serialEvent();  
+    serialEvent();
   }
   
-  if (dataReceived) {
-    handleData();
-    dataReceived = false;
-    data = "";
+  if (commandReceived) {
+    handleCommand();
+    resetCommandBuffer();
   }
   
   sendHeartbeat();
   delay(1000);
 }
 
-void handleData() {
-  digitalWrite(DEBUG_LED, HIGH);
-  irsend.sendNEC(0x20DF10EF, 32);
-  delay(500);
-  digitalWrite(DEBUG_LED, LOW);
+void handleCommand() {  
+  DATA_BUS.print("MSG\t");
+  DATA_BUS.print(uniqueID, HEX);
+  DATA_BUS.print("\t");
+  for (int i = 0; i < MAX_ARGS; i++) {
+    DATA_BUS.print(commandBuffer[i]);
+    DATA_BUS.print("\t");  
+  }
+  DATA_BUS.print("\n");
+  
+  String targetID = commandBuffer[1];
+  
+  if (targetID.equalsIgnoreCase(String(uniqueID, HEX))) {
+    DATA_BUS.print("RESPONSE\t");
+    DATA_BUS.print(uniqueID, HEX);
+    DATA_BUS.print("\n");
+    
+    //digitalWrite(DEBUG_LED, HIGH);
+    //irsend.sendNEC(0x20DF10EF, 32);
+    //delay(500);
+    //digitalWrite(DEBUG_LED, LOW);
+  }
+}
+
+void resetCommandBuffer() {
+  commandReceived = false;
+  for (int i = 0; i < MAX_ARGS; i++) {
+    commandBuffer[i] = "\0";
+  }
 }
 
 void sendHeartbeat() {
@@ -66,16 +90,34 @@ void sendHeartbeat() {
   DATA_BUS.print("\n");
 }
 
+void blinkLed(int duration) {
+  digitalWrite(DEBUG_LED, HIGH);
+  delay(duration);
+  digitalWrite(DEBUG_LED, LOW);
+  delay(duration);
+}
+
 void serialEvent() {
+  int i = 0;
+  
   while (DATA_BUS.available()) {
     // get the new byte:
-    char inChar = (char)DATA_BUS.read(); 
-    // add it to the inputString:
-    data += inChar;
-    // if the incoming character is a newline, set a flag
-    // so the main loop can do something about it:
-    if (inChar == '\n') {
-      dataReceived = true;
+    char inChar = (char)DATA_BUS.read();
+    
+    if (inChar == '\t') {
+      if (i < MAX_ARGS) {
+        i += 1;
+        commandBuffer[i] = "";
+      } else {
+        // Drop any further arguments to prevent overflowing.
+        commandReceived = true;
+      }
+    } else if (inChar == '\n') {
+      // Done
+      commandReceived = true; 
+    } else {
+      // Push onto the current argument
+      commandBuffer[i] += inChar;
     }
   }
 }
@@ -83,7 +125,7 @@ void serialEvent() {
 long getUniqueID() {
   if (FLASH.read(0) == 255) {
     for (int i = 0; i < 4; i++) {
-      FLASH.write(i, random(255)); 
+     FLASH.write(i, random(255)); 
     }
   }
   
