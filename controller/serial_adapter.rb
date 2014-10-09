@@ -37,6 +37,8 @@ SerialPort.open(PORT, baud: 9600) do |tty|
           LOGGER.info "Heartbeat: #{device.inspect}"
           heartbeats[device["address"]] = device
         end
+      else
+        LOGGER.debug("Unknown message: #{line}")
       end
     end
 
