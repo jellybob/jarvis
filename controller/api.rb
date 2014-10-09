@@ -61,7 +61,7 @@ post '/commands' do
     id: Guid.new.hexdigest,
     state: :queued,
     queued_at: DateTime.now.iso8601,
-    device: MultiJson.dump(device)
+    device: device
   })
 
   REDIS.multi do
