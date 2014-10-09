@@ -1,9 +1,9 @@
 # Jarvis
 
-This repository is my playground for home automation stuff, mostly
-based on Arduinos, duck tape, and hackery. You probably shouldn't
-use it as an example of sensible development practices in the Arudino
-world.
+I'm building some home automation, mostly because I've always fancied
+taking a crack at it, and I had a bunch of hardware lying around that
+could make it reasonably cheap to do. Seriously though, don't use this
+for anything that matters, you'd be mad.
 
 ## Sub-projects
 
