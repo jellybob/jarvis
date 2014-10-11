@@ -1,29 +1,28 @@
+#include <Arduino.h>
 #include <IRremote2.h>
 
-#if defined(__SAM3X8E__) || defined(__SAM3X8H)
-  // This is an Arudino Due, probably my Tilda MKe
-  #define LED 72
-  #define DEBUG SerialUSB
-#else
-  // Its something else
-  #define LED 13
-  #define DEBUG Serial
-#endif
+#define LED PIN_LED_RXL
+#define BUTTON BUTTON_A
+
+int i = 0;
+long codes[4] = { 0xF720DF, 0xF7A05F, 0xF7609F, 0xF7E01F };
 
 IRsend irsend;
 
 void setup() {
-//  while(!SerialUSB);
-  DEBUG.begin(9600);
-  DEBUG
+  pinMode(BUTTON, INPUT);
+  pinMode(LED, OUTPUT);
+  digitalWrite(LED, LOW);
 }
 
 void loop() {
-  DEBUG.print(".");
-  digitalWrite(LED, HIGH);
-  irsend.sendNEC(0x20DF10EF, 32);
-  delay(1000);
-  
-  digitalWrite(LED, LOW);
-  delay(1000);
+  if (digitalRead(BUTTON) == LOW) {
+    digitalWrite(LED, HIGH);
+    irsend.sendNEC(codes[i], 32);
+    i += 1;
+    if (i > 3) { i = 0; }
+    delay(50);
+  } else {
+    digitalWrite(LED, LOW);
+  }
 }
