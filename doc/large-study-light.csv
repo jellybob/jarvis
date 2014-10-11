@@ -1,0 +1,9 @@
+Name,Type,Addr,Size
+Brightness Up,NEC,F700FF,32
+Brightness Down,NEC,F7807F,32
+Off,NEC,F740BF,32
+On,NEC,F7C03F,32
+Red,NEC,F720DF,32
+Green,NEC,F7A05F,32
+Blue,NEC,F7609F,32
+White,NEC,F7E01F,32
