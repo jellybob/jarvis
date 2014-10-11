@@ -43,8 +43,8 @@
 // Teensy 2.0
 #elif defined(__AVR_ATmega32U4__)
   //#define IR_USE_TIMER1   // tx = pin 14
-  #define IR_USE_TIMER3   // tx = pin 9
-  //#define IR_USE_TIMER4_HS  // tx = pin 10
+  //#define IR_USE_TIMER3   // tx = pin 9
+  #define IR_USE_TIMER4_HS  // tx = pin 10
 
 // Teensy++ 1.0 & 2.0
 #elif defined(__AVR_AT90USB646__) || defined(__AVR_AT90USB1286__)
