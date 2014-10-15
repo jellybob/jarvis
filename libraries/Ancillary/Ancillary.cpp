@@ -10,9 +10,6 @@ Ancillary::Ancillary() { }
 
 void Ancillary::begin(const char* deviceName, const char* manufacturer, const char* deviceType, 
   Stream &bus, UniqueID &uniqueId, void (*commandHandler)(String, String*)) {
-  pinMode(13, OUTPUT);
-  digitalWrite(13, LOW);
-  
   this->deviceName = deviceName;
   this->manufacturer = manufacturer;
   this->deviceType = deviceType;
@@ -86,7 +83,6 @@ void Ancillary::receiveIncomingData() {
         }
       } else if (inChar == '\n') {
         commandReceived = true;
-        digitalWrite(13, HIGH);
       } else {
         commandBuffer[argumentIndex] += inChar;
       }

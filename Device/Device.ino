@@ -9,9 +9,18 @@ const char deviceType[] = "Generic";
 
 UniqueID uniqueID;
 Ancillary ancillary;
+bool lightState = LOW;
 
 void commandEvent(String command, String* args) {
-  pinMode(13, HIGH);
+  if (command == "toggle") {
+    if (lightState == HIGH) {
+      lightState = LOW;
+    } else {
+      lightState = HIGH;  
+    }
+    
+    pinMode(13, lightState);
+  }
 }
 
 void setup() {
@@ -24,5 +33,5 @@ void setup() {
 
 void loop() {
   ancillary.loop();
-  delay(1000);
+  delay(200);
 }
