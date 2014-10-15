@@ -1,0 +1,2 @@
+api: PORT=4567 ruby api.rb
+tty0: PORT=/dev/ttyACM0 NAME=local ruby serial_adapter.rb
