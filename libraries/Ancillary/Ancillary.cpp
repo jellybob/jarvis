@@ -8,7 +8,8 @@ String commandBuffer[MAX_ARGS];
 
 Ancillary::Ancillary() { }
 
-void Ancillary::begin(const char* deviceName, const char* manufacturer, const char* deviceType, Stream &bus, UniqueID &uniqueId) {
+void Ancillary::begin(const char* deviceName, const char* manufacturer, const char* deviceType, 
+  Stream &bus, UniqueID &uniqueId, void (*commandHandler)(String, String*)) {
   pinMode(13, OUTPUT);
   digitalWrite(13, LOW);
   
@@ -17,6 +18,7 @@ void Ancillary::begin(const char* deviceName, const char* manufacturer, const ch
   this->deviceType = deviceType;
   this->bus = &bus;
   this->uniqueId = &uniqueId;
+  this->commandEvent = commandHandler;
 
   resetCommandBuffer();
 }
@@ -44,8 +46,20 @@ void Ancillary::handleCommand() {
   String targetID = commandBuffer[1];
 
   if (targetID.equalsIgnoreCase(String(uniqueId->getID(), HEX))) {
-    bus->print("RESPONSE\t");
+    String command = commandBuffer[2];
+    String commandId = commandBuffer[3];
+    String args[MAX_ARGS];
+
+    for (int i = 4; i < MAX_ARGS; i++) {
+      args[i] = String(commandBuffer[i]);
+    }
+    
+    commandEvent(command, args);
+
+    bus->print("ACK\t");
     bus->print(uniqueId->getID(), HEX);
+    bus->print("\t");
+    bus->print(commandId);
     bus->println("");
   }
 }

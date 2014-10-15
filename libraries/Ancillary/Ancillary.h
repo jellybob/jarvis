@@ -8,7 +8,7 @@ class Ancillary
 {
 public:
   Ancillary();
-  void begin(const char* deviceName, const char* manufacturer, const char* deviceType, Stream &bus, UniqueID &uniqueId);
+  void begin(const char* deviceName, const char* manufacturer, const char* deviceType, Stream &bus, UniqueID &uniqueId, void (commandHandler)(String, String*));
   void loop();
 protected:
   void receiveIncomingData();
@@ -21,6 +21,7 @@ protected:
   const char* deviceType;
   Stream* bus;
   UniqueID* uniqueId;
+  void (*commandEvent)(String, String*);
 };
 
 #endif

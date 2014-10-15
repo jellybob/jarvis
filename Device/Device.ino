@@ -10,9 +10,16 @@ const char deviceType[] = "Generic";
 UniqueID uniqueID;
 Ancillary ancillary;
 
+void commandEvent(String command, String* args) {
+  pinMode(13, HIGH);
+}
+
 void setup() {
+  pinMode(13, OUTPUT);
+  pinMode(13, LOW);
+  
   Serial.begin(9600);
-  ancillary.begin(deviceName, manufacturer, deviceType, Serial, uniqueID);
+  ancillary.begin(deviceName, manufacturer, deviceType, Serial, uniqueID, commandEvent);
 }
 
 void loop() {
