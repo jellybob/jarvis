@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sequel -m migrations $DATABASE_URL

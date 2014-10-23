@@ -1,12 +1,44 @@
 #!/usr/bin/env ruby
 $: << File.dirname(__FILE__) + "/../lib"
 require 'jarvis/amqp_client'
+require 'jarvis/heartbeat'
+require 'sequel'
+
+def log_heartbeat(heartbeat)
+  heartbeat.logged_at = DateTime.now
+  device = DB[:devices].where(adapter: heartbeat.adapter, address: heartbeat.address).first
+    
+  row = heartbeat.to_h
+  row[:last_heartbeat_received_at] = row.delete(:received_at)
+  row[:last_heartbeat_logged_at] = row.delete(:logged_at)
+
+  if device.nil?
+    device = DB[:devices].insert(row)
+  else
+    DB[:devices].where(adapter: heartbeat.adapter, address: heartbeat.address).update(row)
+  end
+end
+
+DB = Sequel.connect(ENV["DATABASE_URL"])
 
 Jarvis::AmqpClient.run do |client, logger|
   channel = client.create_channel
 
   heartbeats = channel.queue("jarvis.heartbeats", exclusive: false)
-  heartbeats.subscribe(block: true, exclusive: false) do |info, props, payload|
-    logger.info({ message: "Received heartbeat", properties: props.inspect, payload: payload.inspect })
+  heartbeats.subscribe(block: true, exclusive: false, manual_ack: true) do |info, props, payload|
+    logger.debug({ message: "Received message from RabbitMQ", payload: payload, properties: props.inspect })
+
+    heartbeat = Jarvis::Heartbeat.new(props.headers)
+    logger.info({ message: "Received heartbeat", payload: heartbeat.to_h.inspect })
+   
+    begin
+      log_heartbeat(heartbeat)
+    rescue StandardError => e
+      logger.error({ message: e.to_s })
+      channel.reject(info.delivery_tag, true) # Requeue
+    end
+
+    logger.info({ message: "Logged heartbeat", payload: heartbeat.to_h.inspect })
+    channel.acknowledge(info.delivery_tag, false)
   end
 end

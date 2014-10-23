@@ -1,9 +1,20 @@
 #!/usr/bin/env ruby
 $: << File.dirname(__FILE__) + "/../lib"
 require 'jarvis/amqp_client'
+require 'jarvis/heartbeat'
 
 Jarvis::AmqpClient.run do |client, logger|
   channel = client.create_channel
   x = channel.default_exchange
-  x.publish("Test", :routing_key => "jarvis.heartbeats")
+
+  heartbeat = Jarvis::Heartbeat.new({
+    adapter: "test",
+    address: "test",
+    device: "test",
+    device_type: "test",
+    manufacturer: "test",
+    received_at: DateTime.now
+  })
+
+  x.publish("Heartbeat", headers: heartbeat.to_h, routing_key: "jarvis.heartbeats")
 end
