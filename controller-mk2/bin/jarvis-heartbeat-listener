@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+$: << File.dirname(__FILE__) + "/../lib"
+require 'jarvis/amqp_client'
+
+Jarvis::AmqpClient.run do |client, logger|
+  channel = client.create_channel
+
+  heartbeats = channel.queue("jarvis.heartbeats", exclusive: false)
+  heartbeats.subscribe(block: true, exclusive: false) do |info, props, payload|
+    logger.log(:info, "Received heartbeat", properties: props.inspect, payload: payload.inspect)
+  end
+end

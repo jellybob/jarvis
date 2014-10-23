@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+$: << File.dirname(__FILE__) + "/../lib"
+require 'jarvis/amqp_client'
+
+Jarvis::AmqpClient.run do |client, logger|
+  channel = client.create_channel
+  x = channel.default_exchange
+  x.publish("Test", :routing_key => "jarvis.heartbeats")
+end
