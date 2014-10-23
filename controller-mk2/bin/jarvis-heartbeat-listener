@@ -7,6 +7,6 @@ Jarvis::AmqpClient.run do |client, logger|
 
   heartbeats = channel.queue("jarvis.heartbeats", exclusive: false)
   heartbeats.subscribe(block: true, exclusive: false) do |info, props, payload|
-    logger.log(:info, "Received heartbeat", properties: props.inspect, payload: payload.inspect)
+    logger.info({ message: "Received heartbeat", properties: props.inspect, payload: payload.inspect })
   end
 end

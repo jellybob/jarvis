@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+export DATABASE_URL="postgres://postgres@${POSTGRES_PORT_5432_TCP_ADDR}:${POSTGRES_PORT_5432_TCP_PORT}/jarvis"
+
+# Make sure not to add a / for tidiness sake, as that changes the RabbitMQ VHost you're connecting to.
+export RABBITMQ_URL="amqp://guest:guest@${RABBITMQ_PORT_5672_TCP_ADDR}:${RABBITMQ_PORT_5672_TCP_PORT}"
+
+cd /srv/jarvis
+exec ./bin/$@

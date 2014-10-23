@@ -9,6 +9,7 @@ module Jarvis
         name = File.basename($0)
       end
 
+      $stdout.sync = true
       logger = ::Logger.new($stdout)
       logger.formatter = ->(severity, datetime, progname, msg) {
         "#{datetime.strftime("%Y-%m-%dT%H:%M:%S%z")} #{msg.delete(:message)} #{msg.collect { |k,v| "#{k}=#{v}" }.join(" ")}\n"
