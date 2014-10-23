@@ -27,6 +27,8 @@ ENV HOME /root
 
 # Install Ruby and dependencies
 RUN apt-get install -y ruby2.0
+# See https://bugs.launchpad.net/ubuntu/+source/ruby2.0/+bug/1310292
+RUN ln -sf /usr/bin/ruby2.0 /usr/bin/ruby && ln -sf /usr/bin/gem2.0 /usr/bin/gem
 RUN gem install --no-ri --no-rdoc bundler
 
 # Give Jarvis it's own user
@@ -38,7 +40,7 @@ ADD . /srv/jarvis
 RUN chown -R jarvis:jarvis /srv/jarvis
 WORKDIR /srv/jarvis
 RUN /sbin/setuser jarvis bundle check || /sbin/setuser jarvis bundle install --path vendor/bundle
-ADD docker/service/jarvis/run /etc/service/jarvis/run
+ADD docker/service/jarvis-heartbeat-listener/run /etc/service/jarvis-heartbeat-listener/run
 
 EXPOSE 5672
 EXPOSE 15672
