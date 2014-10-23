@@ -1,2 +1,0 @@
-#!/bin/bash
-/sbin/setuser jarvis bash -c "cd ~ && exec bundle exec ./bin/jarvis-heartbeat-listener"

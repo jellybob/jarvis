@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+docker run -d --name="rabbitmq" dockerfile/rabbitmq
+docker run -d --name="postgres" postgres
+docker run -d --link=postgres:postgres --link=rabbitmq:rabbitmq --name="jarvis-heartbeat-listener" jellybob/jarvis-heartbeat-listener
