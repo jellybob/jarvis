@@ -13,6 +13,8 @@ CMD [ "/sbin/my_init" ] # Init
 # find the Erlang cookie.
 VOLUME [ "/var/lib/rabbitmq" ]
 ENV RABBITMQ_BASE /var/lib/rabbitmq
+ENV RABBITMQ_URL amqp://localhost
+
 ENV HOME /var/lib/rabbitmq
 
 RUN apt-get -qq update && apt-get install -y rabbitmq-server
@@ -33,8 +35,9 @@ RUN adduser --system --home /srv/jarvis --group --disabled-password jarvis
 # Grab the latest version of Jarvis
 RUN apt-get install -y git-core
 ADD . /srv/jarvis
+RUN chown -R jarvis:jarvis /srv/jarvis
 WORKDIR /srv/jarvis
-RUN /sbin/setuser jarvis bundle check || /sbin/setuser jarvis bundle install
+RUN /sbin/setuser jarvis bundle check || /sbin/setuser jarvis bundle install --path vendor/bundle
 ADD docker/service/jarvis/run /etc/service/jarvis/run
 
 EXPOSE 5672
