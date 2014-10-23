@@ -4,9 +4,13 @@ GEM
     amq-protocol (1.9.2)
     bunny (1.5.1)
       amq-protocol (>= 1.9.2)
+    pg (0.17.1)
+    sequel (4.15.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bunny
+  pg
+  sequel

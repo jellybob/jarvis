@@ -1,3 +1,6 @@
 source "https://rubygems.org"
 
 gem "bunny"
+gem "sequel"
+gem "pg"
+gem "serialport"

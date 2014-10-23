@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+$: << File.dirname(__FILE__) + "/../lib"
+require 'jarvis/amqp_client'
+require 'jarvis/heartbeat'
+
+Jarvis::AmqpClient.run do |client, logger|
+  channel = client.create_channel
+  x = channel.default_exchange
+
+  x.publish("Toggle on", headers: {
+    address: "FFFF87BE",
+    command: "toggle"
+  }, routing_key: "jarvis.adapter.serial:medusa")
+end

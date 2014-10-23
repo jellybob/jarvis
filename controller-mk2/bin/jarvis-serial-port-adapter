@@ -1,0 +1,74 @@
+#!/usr/bin/env ruby
+# A simple example adapter that reads from a serial port.
+$: << File.dirname(__FILE__) + "/../lib"
+require 'serialport'
+require 'socket'
+require 'jarvis/amqp_client'
+require 'jarvis/heartbeat'
+
+PORT = ENV.fetch("PORT", "/dev/ttyACM0")
+BAUD_RATE = ENV.fetch("BAUD_RATE", "9600").to_i
+NAME = ENV.fetch("NAME", Socket.gethostname)
+
+UID = 0
+DEVICE = 1
+MANUFACTURER = 2
+DEVICE_TYPE = 3
+
+Jarvis::AmqpClient.run do |client, logger|
+  channel = client.create_channel
+  x = channel.default_exchange
+  
+
+  logger.debug({ message: "Opening serial port #{PORT}", tty: PORT })
+  SerialPort.open(PORT, baud: BAUD_RATE) do |tty|
+    # Send queued commands
+    Thread.new do
+      command_channel = client.create_channel
+      command_queue = command_channel.queue("jarvis.adapter.serial:#{NAME}", exclusive: false)
+     
+      command_queue.subscribe(block: true, manual_ack: true) do |info, props, payload|
+        logger.info({ message: "Relaying command", props: props.inspect, command: props[:headers]["command"], address: props[:headers]["address"] })
+        tty.puts([
+          "COMMAND",
+          props[:headers]["address"],
+          props[:headers]["command"],
+          "DUMMY"
+        ].join("\t"))
+
+        tty.flush
+        command_channel.acknowledge(info.delivery_tag, false)
+      end
+    end
+
+    while true do
+      heartbeats = {}
+
+      # Pick up any new data being sent to us.
+      tty.readlines.each do |line|
+        fields = line.split("\t").collect(&:strip)
+        if fields.shift == "HEARTBEAT"
+          received_data = {
+            adapter: "serial:#{NAME}",
+            address: fields[UID],
+            device: fields[DEVICE],
+            manufacturer: fields[MANUFACTURER],
+            device_type: fields[DEVICE_TYPE]
+          }
+
+          if received_data.to_h.values.any? { |f| f.nil? || f == "" }
+            logger.debug({ message: "Mangled heartbeat, dropping" })
+          else
+            heartbeat = Jarvis::Heartbeat.new(received_data)
+            logger.info({ message: "Heartbeat received", props: heartbeat.to_h })
+            x.publish("Heartbeat", headers: heartbeat.to_h, routing_key: "jarvis.heartbeats")
+          end
+        else
+          logger.debug({ message: "Unknown message: #{line}" })
+        end
+      end
+
+      sleep 1
+    end
+  end
+end
